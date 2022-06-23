@@ -1,0 +1,130 @@
+hp@HOSH-PC MINGW64 ~ (master)
+$ cd desktop
+
+hp@HOSH-PC MINGW64 ~/desktop (master)
+$ mkdir taskApp_repo
+
+hp@HOSH-PC MINGW64 ~/desktop (master)
+$ cd taskApp_repo
+
+hp@HOSH-PC MINGW64 ~/desktop/taskApp_repo (master)
+$ git init
+Initialized empty Git repository in C:/Users/hp/Desktop/taskApp_repo/.git/
+
+hp@HOSH-PC MINGW64 ~/desktop/taskApp_repo (master)
+$ git add Style.css
+
+hp@HOSH-PC MINGW64 ~/desktop/taskApp_repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   Style.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Index.html
+        Index.js
+
+
+hp@HOSH-PC MINGW64 ~/desktop/taskApp_repo (master)
+$ git add Index.html
+
+hp@HOSH-PC MINGW64 ~/desktop/taskApp_repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   Index.html
+        new file:   Style.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Index.js
+
+
+hp@HOSH-PC MINGW64 ~/desktop/taskApp_repo (master)
+$ git add Index.js
+
+hp@HOSH-PC MINGW64 ~/desktop/taskApp_repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   Index.html
+        new file:   Index.js
+        new file:   Style.css
+
+hp@HOSH-PC MINGW64 ~/desktop/taskApp_repo (master)
+$ git commit
+[master (root-commit) cd497da] "Add Html,Css,Js Files"
+ 3 files changed, 268 insertions(+)
+ create mode 100644 Index.html
+ create mode 100644 Index.js
+ create mode 100644 Style.css
+
+hp@HOSH-PC MINGW64 ~/desktop/taskApp_repo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+hp@HOSH-PC MINGW64 ~/desktop/taskApp_repo (master)
+$ git add Index.html
+
+hp@HOSH-PC MINGW64 ~/desktop/taskApp_repo (master)
+$ git add Index.js
+
+hp@HOSH-PC MINGW64 ~/desktop/taskApp_repo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   Index.html
+        modified:   Index.js
+
+
+hp@HOSH-PC MINGW64 ~/desktop/taskApp_repo (master)
+$ git commit -m "Added an alert message on blank input task and numbered list of tasks"
+[master e8000ae] Added an alert message on blank input task and numbered list of tasks
+ 2 files changed, 15 insertions(+), 6 deletions(-)
+
+hp@HOSH-PC MINGW64 ~/desktop/taskApp_repo (master)
+$ git remote add origin https://github.com/dwahomewaweru/taskplanner.git
+
+hp@HOSH-PC MINGW64 ~/desktop/taskApp_repo (master)
+$ git branch -M main
+
+hp@HOSH-PC MINGW64 ~/desktop/taskApp_repo (main)
+$ git push -u origin main
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 3.14 KiB | 643.00 KiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/dwahomewaweru/taskplanner.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+hp@HOSH-PC MINGW64 ~/desktop/taskApp_repo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
